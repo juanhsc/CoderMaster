@@ -74,7 +74,7 @@ body{
     top: 0px;
   
 background: -webkit-linear-gradient(to right, #f5af1998, #f1271198 ),url(../imagenes/4.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af193a, #f127113f ), url(../imagenes/4.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #f5af1981, #f1271170 ), url(../imagenes/4.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     
     width: 200vh;
