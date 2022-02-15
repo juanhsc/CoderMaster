@@ -88,7 +88,7 @@ background: linear-gradient(to right, #f5af193a, #f127113f ), url(../imagenes/4.
     color: black;
     height: 3rem;
     background: -webkit-linear-gradient(to right, #f5af19, #f12711 );  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af19b0, #f12711d8 );
+background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
 }
 .nav{
     color: black;
@@ -134,7 +134,7 @@ background: linear-gradient(to right, #f5af19b0, #f12711d8 );
     }
 
     li:hover{
-        font-size: 130%;
+        font-style: italic;
         
 
     }
