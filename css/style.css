@@ -1,4 +1,4 @@
-/*GLOBALES*/
+*GLOBALES*/
 
 * {
     margin: 0;
@@ -69,31 +69,11 @@ body{
 
 
 /********************************************************************head******************************************************************/
-.headeri{
-    
+.header{
+    position: sticky;
     top: 0px;
-  
-background: -webkit-linear-gradient(to right, #f5af1998, #f1271198 ),url(../imagenes/4.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af1981, #f1271170 ), url(../imagenes/4.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
-    width: 200vh;
-    height: 80vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
  
 }
-.header{
-    color: black;
-    height: 3rem;
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711 );  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
-}
-.nav{
-    color: black;
-}
-
 @media (max-width: 768px) {
 .header{
     position: relative;
@@ -103,26 +83,16 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
 }
 
 
-.nav__index{
+.nav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: right;
-    
+    justify-content: center;
+    background-color: rgb(11, 156, 223);
     border-radius: 1rem;
     
     }
-    .nav .nav__menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: right;
-        color: black;
-        border-radius: 1rem;
-        
-        }
     .nav__menu{
         font-weight: 100;
       
@@ -134,7 +104,7 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
     }
 
     li:hover{
-        font-style: italic;
+        font-size: 130%;
         
 
     }
@@ -153,7 +123,16 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
       }
 
     
-   
+    @media (max-width: 768px){
+        .icon{
+            display: none;
+        }
+    }
+
+    .icon{
+        margin-right: 2rem;
+       
+    }
     
    
 
@@ -163,7 +142,7 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
 
  .section__h1{
     height: 70vh;
-    
+    background-image: url(../imagenes/descarga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:bottom;
@@ -175,27 +154,9 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
 
  .section__titulo{
     color: white;
-    font-size: 8rem;
+    font-size: 6rem;
     text-align:center;
-    margin-top: 10rem;
 }
-
-.nombre{
-    
-    font-size: 5rem;
-    color: white;
-    text-align: center;
-}
-.animate__bounce{
-    --animate-duration: 2s;
-}
-
-.logo{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 
 @media (max-width: 768px){
     .section__titulo{
@@ -224,26 +185,6 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
     }
    
 
-
-}
-
-.titulo{
-    width: 90rem;
-    margin: auto;
-    
-    
-   
-}
-@media (max-width: 768px){
-    .icon{
-        display: flex;
-      align-items: center;
-    }
-}
-
-.icon{
-    margin-right: 2rem;
-   
 }
 
 
@@ -252,15 +193,14 @@ background: linear-gradient(to right, #f5af19b0, #5c0f07d8 );
 
 .section__fieldset{
     align-items: center;
-    width: 50rem; 
-    height: 19rem;
+    width: 25rem; 
+    height: 23rem;
     background-color: rgba(29, 93, 145, 0.384);
-    
-    
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     border-color: rgb(255, 255, 255);
     border-width: 0.5rem;
     border-radius: 2rem;
-    margin-left: 5rem;
     
 
     
@@ -528,8 +468,8 @@ box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
     display: grid;
     grid-template-columns: 30rem 30rem 30rem;
     grid-template-rows: 30rem  30rem 30rem 30rem;
-    column-gap: 0.001rem;
-    row-gap: 0.01rem;
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
     grid-template-areas:"fotografost fotografosi diseñadorest"
                          "rrhhi      rrhht        diseñadoresi" 
                         "marketingt   marketingi  accionistast"
