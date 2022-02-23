@@ -1,4 +1,4 @@
-*GLOBALES*/
+/*GLOBALES*/
 
 * {
     margin: 0;
@@ -10,23 +10,7 @@
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         
      }
-         
 
-ul{
-    list-style-type: none;
-    
-}
-li{
-    float:left;
-    margin-right: 2rem;
-    padding-right: 3rem;
-   
-}
-a{
-    text-decoration: none;
-    color: white;
-  
-}
 h1{
     font-size: 6rem;
     text-align: left;
@@ -41,7 +25,6 @@ h3, h4, h5 {
 
 p{
     font-size: 2rem;
-    
     
 }
 
@@ -62,86 +45,25 @@ body{
 }
 
 
-/********************************************************Fin de globales***************************************************************/
+.navbar{
+    font-size: 2rem;
 
-
-/*Clases*/
-
-
-/********************************************************************head******************************************************************/
+}
 .header{
     position: sticky;
     top: 0px;
  
 }
-@media (max-width: 768px) {
-.header{
-    position: relative;
-    
-}
-
-}
 
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(11, 156, 223);
-    border-radius: 1rem;
-    
-    }
-    .nav__menu{
-        font-weight: 100;
-      
-        font-size: 2rem;
-     
-        
-        display: inline-block;
-       
-    }
+/********************************************************Fin de globales***************************************************************/
 
-    li:hover{
-        font-size: 130%;
-        
 
-    }
-
-    @media (max-width: 768px) {
-        .nav, .nav__menu {
-          display: flex;
-          flex-direction: column;
-          font-size: 4rem;
-          margin-bottom: 1rem;
-          padding: 0rem;
-          gap: 1rem;
-          align-items:center;
-                             
-        }
-      }
-
-    
-    @media (max-width: 768px){
-        .icon{
-            display: none;
-        }
-    }
-
-    .icon{
-        margin-right: 2rem;
-       
-    }
-    
-   
-
-/*fin head*/
 
  /****************************************************************index**********************************************************************/
 
  .section__h1{
-    height: 70vh;
+    height: 60vh;
     background-image: url(../imagenes/descarga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,6 +72,17 @@ body{
     border-radius: 1rem ;
     display: flex;
     flex-direction: column;
+
+}
+.formulario__index{
+    width: 50rem;
+    padding-left: 1rem;
+    border-radius: 5%;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    background-color: rgba(26, 89, 97, 0.418);
+    color: white;
+    border-color: black solid 1rem;
 }
 
  .section__titulo{
@@ -172,82 +105,24 @@ body{
         flex-wrap: nowrap;
       margin: 0%;
       padding-top: 2rem;
-
       justify-content:center;
-      margin: 0rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
 
     }
     .section__fieldset{
         width: 10rem;
         height: 10rem;
-        
-        
+ 
     }
    
-
 }
+   
 
 
 
 
-
-.section__fieldset{
-    align-items: center;
-    width: 25rem; 
-    height: 23rem;
-    background-color: rgba(29, 93, 145, 0.384);
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    border-color: rgb(255, 255, 255);
-    border-width: 0.5rem;
-    border-radius: 2rem;
-    
-
-    
-}
-.formulario{
-    margin-left: 3rem;
-  
-  }
-@media (max-width: 768px){
-
-    .section__fieldset{
-        width: 10rem;
-    }
-
-div.forulario{
-margin-left: 0rem;
-}
-}
-
-
-.section__origen{
-    width: 50%;
-}
-.vuelos{
-    font-size: 3rem;
-    font-family: fantasy;
-    color: white;
-}
-
-
-.desde, .hasta, .origen, .destino{
-height: 3rem;
-width: 40rem;
-border-radius:0.5rem;
-margin-left: 3rem;
-}
-.desde, .hasta{
-    width: 20rem;
-}
-
-.form__ida,.form__idaYVuelta{
-    margin-left: 3rem;
-    
- }
-
-
-
+  /*grid*/
 
  .grid{
     margin-top: 5rem;
@@ -267,15 +142,12 @@ margin-left: 3rem;
    padding-top: 25rem;
    }
 
-  
 
 .two__grid{
     color: white;
     background-color: rgb(127, 230, 132);
     grid-column: 2/4;
     text-align: center;
-    
-    
    
 }
 .three__grid{
@@ -300,14 +172,9 @@ margin-left: 3rem;
 }
 
 
-
-
-
 .cuerpo{
 
-    margin: 3rem 1rem 1rem 1rem;
-   
-    
+    margin: 3rem 1rem 1rem 1rem;  
     
 }
 
@@ -338,126 +205,63 @@ margin-left: 3rem;
 }
 }
 
-/*************************************************pagina Contacto***********************************************************************/
-.section__form{
-    
-    font-size: 3rem;
-    border-radius: 2rem;
-    border: 2rem;
-    border-color: black;
-   
-    
-}
-.box__contacto{
-    display: flex;
-    flex-direction: row;
-    background-image: url(../imagenes/pexels-nubia-navarro-\(nubikini\)-386009.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5rem;
-     
-    
-}
-
-.form__form{
-color: white;
-
-}
-
-
-.fieldset__form{
-display: inline;
-background-color: rgba(154, 192, 236, 0.514);
-margin: 1rem;
-padding: 5rem;
-border-radius: 5%;
-padding: 10px 15px;
-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
-
-}
-.btn{
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 10%;
-}
-
-
-
-
-
-
-
-.header__nombre{
-    font-size: 3rem;
-    text-align: left;
-    font-style: italic;
-
-    
-}
-.form__eleccion{
-    display:flex;
-    flex-direction:row;
-    margin-bottom: 2rem;
-    justify-content: center;
-    }
-
-
-.tabla{
-    margin-top: 5rem;
+/****************************************Formulario***************************************/
+.form-label{
     font-size: 2rem;
-    
+}
+button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: royalblue;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+   }
    
-}
-
-
-.texto{
-    margin: 2rem;
-    text-align: justify;
-  
-
-
-}
-
-
-.busqueda{
-    font-size: 2rem;
-    
-}
-
-
-
-
-.seaction__form{
-    height: 20rem;
-}
-
-.form__label{
-    padding: 0.5rem;
-}
-
-.mapa{
-    margin-left: 20rem;
-}
-
-@media(max-width: 768px){
-.box__contacto{
-    
-    display: flex;
-    flex-direction:column;
-    padding: 0rem;
+   .boton  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid royalblue;
+   }
    
-}
-.mapa{
-    margin-left: 1rem;
- 
-}
-.iframe{
-    width: 50rem;
-}
-}
-
-
+   .boton:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+   }
+   
+   button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: royalblue;
+   }
+   
+   button:hover {
+    color: white;
+   }
+   
+   button:active span::before {
+    background: #2751cd;
+   }
 /**************************************************nosotros*********************************************************************/
 
 
@@ -468,12 +272,12 @@ box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
     display: grid;
     grid-template-columns: 30rem 30rem 30rem;
     grid-template-rows: 30rem  30rem 30rem 30rem;
-    column-gap: 0.1rem;
-    row-gap: 0.1rem;
+   
+    
     grid-template-areas:"fotografost fotografosi diseñadorest"
                          "rrhhi      rrhht        diseñadoresi" 
                         "marketingt   marketingi  accionistast"
-                          "editoresi  editorest   accionistasi"  ;
+                          "editoresi  editorest   accionistasi" ;
     
 }
 
@@ -481,7 +285,7 @@ box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
     font-size: 3rem;
    height: 30rem;
    width: 30rem;
-   
+  
        
 }
 
@@ -498,9 +302,8 @@ height: 28rem;
     border-left: solid 0.5rem black;
     border-top: solid 0.5rem black;
     border-bottom: solid 0.5rem black;
-
-
 }
+
 .fotografosi{
     width: 30rem;
     height: 30rem;
@@ -510,9 +313,7 @@ height: 28rem;
     border-right: solid 0.5rem black;
     border-top: solid 0.5rem black;
     border-bottom: solid 0.5rem black;
-    
- 
-  background-color: #c3ccde;
+    background-color: #c3ccde;
 }
 .diseñadorest{
 background-color: #dec3cf;
@@ -521,8 +322,6 @@ text-align: center;
 border-left: solid 0.5rem black;
 border-top: solid 0.5rem black;
 border-right: solid 0.5rem black;
-
-
 
 }
 .diseñadoresi{
@@ -672,20 +471,15 @@ border-left: solid 0.5rem black;
    
 }
 
-
-
 /****************************************************pagina destinos*************************************/
 .box__imagen{
     background-image: url(../imagenes/pexels-alexandr-podvalny-1008155.jpg);
     height: 600px;
- 
-  background-attachment: fixed;
+   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-	
-  margin-bottom:50px;
-
+ margin-bottom:50px;
 
 }
 
@@ -698,8 +492,15 @@ border-left: solid 0.5rem black;
     @media(max-width: 768px){
 
     }
-
-
+  .cards{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      
+  }
+ 
 /*************************************mas buscados**********************************************/
 
 .titulo__casas{
@@ -728,8 +529,6 @@ width: 90%;
 margin-left: 1.2rem;
 
 }
-
-
 
 
 .container__flex{
@@ -761,7 +560,6 @@ overflow:clip;
 }
 
 
-
 .flex__casa{
 
 height: 30rem;
@@ -785,31 +583,15 @@ border: 1rem double black;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***************************************footer****************************************/
 .footer{
     text-align: center;
-    
-        font-size: 1rem;
-background-color: #03ba8f;
+    font-size: 1.5rem;
+    background-color: #03ba8f;
     margin-bottom: 3rem;
     padding: 2rem;
     margin-top: 5rem;
-    background-image: url();
-   border-radius: 0.5rem;
+    border-radius: 0.5rem;
       
     
 }
