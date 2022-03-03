@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html { /* etiqueta raíz */
+        font-size: 62.5%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+     }
+
+h1{
+    font-size: 6rem;
+    text-align: left;
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+h3, h4, h5 {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;
+    
+}
+
+th, td{
+    text-align: center;
+    
+}
+tr{
+    font-size: 3rem;
+}
+
+body{
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+@media(max-width: 768px){
+    body {margin: 0rem;}
+}
